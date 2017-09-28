@@ -8,6 +8,11 @@
   <!-- Navbar Right Menu -->
   <div class="navbar-custom-menu">
     <ul class="nav navbar-nav">
+      <li class="dropdown user user-menu <?php if($page == 'home') { echo 'active-page'; } ?>">
+        <a href="<?php echo base_url('home'); ?>">
+          <span class="hidden-xs">Home</span>
+        </a>
+      </li>
       <li class="dropdown user user-menu menu-main-parent <?php if($page == 'devices') { echo 'active-page'; } ?>">
         <a href="#">
           <span class="hidden-xs">Hardware</span>
@@ -36,7 +41,7 @@
         </a>
       </li>
 
-      <li class="dropdown user user-menu menu-main-parent">
+      <li class="dropdown user user-menu menu-main-parent <?php if($page == 'category' || $page == 'users' || $page == 'profile') { echo 'active-page'; } ?>">
         <a href="#">
           <span class="hidden-xs"><i class="fa fa-power-off"></i></span>
         </a>

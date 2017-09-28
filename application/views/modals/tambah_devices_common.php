@@ -2,7 +2,7 @@
   <div class="form-msg"></div>
   <form enctype="multipart/form-data" id="form-tambah-devices" method="POST">
   <div class="general-form">
-    <div class="line-form col-md-4">
+    <div class="line-form col-md-6">
       <div class="form-group">        
         <label for="name">Devices</label>
         <select class="form-control" name="name" aria-describedby="sizing-addon2">
@@ -28,9 +28,44 @@
         <label for="series">Series</label>
         <input type="text" class="form-control" placeholder="Series" name="series" aria-describedby="sizing-addon2">
       </div>
+	  
+	  <div>
+		<div class="no-pad-left col-md-6">
+		  <div class="form-group">
+			<label for="label">Label</label>
+			<input type="text" class="form-control" placeholder="Label" name="label" aria-describedby="sizing-addon2">
+		  </div>
+		</div>
+		<div class="no-pad-right col-md-6">
+		  <div class="form-group">
+			<label for="condition">Condition</label>
+			<select class="form-control" name="condition" aria-describedby="sizing-addon2">
+			  <option value="Good">Good</option>
+			  <option value="In Service">In Service</option>
+			  <option value="Bad">Bad</option>
+			</select>
+		  </div>
+		</div>
+		<div class="form-group">
+		  <label for="id_staff">User</label>
+		  <select class="form-control" name="id_staff" aria-describedby="sizing-addon2">
+			<option value="">- Select User -</option>
+			<?php foreach ($listUser as $user) { ?>        
+				<option value="<?php echo $user->id_staff; ?>"><?php echo $user->name; ?></option>
+			<?php } ?>
+		  </select>
+		</div>    
+		<div class="form-group">
+		  <label for="location">Location</label>
+		  <select class="form-control" name="location" aria-describedby="sizing-addon2">
+			<option value="Jakarta Office">Jakarta Office</option>
+			<option value="Bandung Office">Bandung Office</option>
+		  </select>
+		</div>		   
+	  </div>
     </div>
     
-    <div class="line-form col-md-4">
+    <div class="line-form col-md-6">
       <div class="form-group">
         <label for="id_supplier">Supplier</label>
         <select class="form-control" name="id_supplier" aria-describedby="sizing-addon2">
@@ -47,11 +82,8 @@
       <div class="form-group">
         <label for="purchase_date">Purchase Date</label>
         <input id="purchase_date" type="text" class="form-control" placeholder="Purchase Date" name="purchase_date" aria-describedby="sizing-addon2" data-date-format="yyyy-mm-dd">
-      </div>     
-    </div>
-
-    <div class="line-form col-md-4">
-      <div class="form-group">
+      </div>
+	  <div class="form-group">
         <label for="warranty">Warranty</label>
         <select class="form-control" name="warranty" aria-describedby="sizing-addon2">
           <option value="">- Select Warranty -</option>
@@ -70,46 +102,11 @@
         <label for="description">Description</label>
         <textarea class="form-control" name="description" style="height: 108px;">
         </textarea> 
-      </div>
+      </div>	  
     </div>
   </div>
 
 
-  <div class="company-form">
-    <div class="no-pad-left col-md-6">
-      <div class="form-group">
-        <label for="label">Label</label>
-        <input type="text" class="form-control" placeholder="Label" name="label" aria-describedby="sizing-addon2">
-      </div>
-    </div>
-    <div class="no-pad-right col-md-6">
-      <div class="form-group">
-        <label for="condition">Condition</label>
-        <select class="form-control" name="condition" aria-describedby="sizing-addon2">
-          <option value="Good">Good</option>
-          <option value="In Service">In Service</option>
-          <option value="Bad">Bad</option>
-        </select>
-      </div>
-    </div>
-    <div class="form-group">
-      <label for="id_staff">User</label>
-      <select class="form-control" name="id_staff" aria-describedby="sizing-addon2">
-        <option value="">- Select User -</option>
-        <?php foreach ($listUser as $user) { ?>        
-            <option value="<?php echo $user->id_staff; ?>"><?php echo $user->name; ?></option>
-        <?php } ?>
-      </select>
-    </div>    
-    <div class="form-group">
-      <label for="location">Location</label>
-      <select class="form-control" name="location" aria-describedby="sizing-addon2">
-        <option value="Jakarta Office">Jakarta Office</option>
-        <option value="Bandung Office">Bandung Office</option>
-      </select>
-    </div>
-       
-  </div>
 
   <div class="form-group">
     <input type="hidden" name="category" value="<?php echo @$devcat; ?>">

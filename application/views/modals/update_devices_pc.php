@@ -244,7 +244,7 @@
       </div>
       <div class="form-group">
         <label for="description">Description</label>
-        <textarea disabled style="cursor: default;" class="form-control" name="description" style="height: 108px;"><?php echo trim($dataDevices->description); ?></textarea> 
+        <textarea disabled style="cursor: default; height: 108px;" class="form-control" name="description"><?php echo trim($dataDevices->description); ?></textarea> 
       </div>
     </div>
   </div>
