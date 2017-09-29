@@ -15,7 +15,7 @@ class software extends AUTH_Controller {
 		$data['category_hw'] 	= $this->category_model->select_by_usage('hardware');
 
 		$data['page'] 		= "software";
-		$data['judul'] 		= "Data Software";
+		$data['judul'] 		= "Software";
 		$data['deskripsi'] 	= "Manage Data Software";
 
 		$data['modal_tambah_software'] = show_my_modal('modals/modal_tambah_software', 'tambah-software', $data);

@@ -14,7 +14,7 @@ class staff extends AUTH_Controller {
 		$data['category_hw'] 	= $this->category_model->select_by_usage('hardware');
 
 		$data['page'] 		= "staff";
-		$data['judul'] 		= "Data Staff";
+		$data['judul'] 		= "Staff";
 		$data['deskripsi'] 	= "Manage Data Staff";
 
 		$data['modal_tambah_staff'] = show_my_modal('modals/modal_tambah_staff', 'tambah-staff', $data);

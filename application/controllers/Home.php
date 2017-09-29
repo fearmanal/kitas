@@ -18,7 +18,7 @@ class Home extends AUTH_Controller {
 		$data['category_hw'] 	= $this->category_model->select_by_usage('hardware');
 
 		$data['page'] 			= "home";
-		$data['judul'] 			= "Beranda";
+		$data['judul'] 			= "Home";
 		$data['deskripsi'] 		= "Manage Data CRUD";
 		$this->template->views('home', $data);
 	}

@@ -15,7 +15,7 @@
       </li>
       <li class="dropdown user user-menu menu-main-parent <?php if($page == 'devices') { echo 'active-page'; } ?>">
         <a href="#">
-          <span class="hidden-xs">Hardware</span>
+          <span class="hidden-xs">Devices</span>
         </a>
         <ul class="dropdown-menu menu-main-child mid">
           <?php foreach ($category_hw as $menu_hw) { ?>

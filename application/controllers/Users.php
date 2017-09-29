@@ -14,7 +14,7 @@ class users extends AUTH_Controller {
 		$data['category_hw'] 	= $this->category_model->select_by_usage('hardware');
 
 		$data['page'] 		= "users";
-		$data['judul'] 		= "Data Users";
+		$data['judul'] 		= "Users";
 		$data['deskripsi'] 	= "Manage Data Users";
 
 		$data['modal_tambah_users'] = show_my_modal('modals/modal_tambah_users', 'tambah-users', $data);

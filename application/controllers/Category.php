@@ -16,7 +16,7 @@ class category extends AUTH_Controller {
 		$data['category_hw'] 	= $this->category_model->select_by_usage('hardware');
 
 		$data['page'] 		= "category";
-		$data['judul'] 		= "Data Category";
+		$data['judul'] 		= "Category";
 		$data['deskripsi'] 	= "Manage Data Category";
 
 		$data['modal_tambah_category'] = show_my_modal('modals/modal_tambah_category', 'tambah-category', $data);

@@ -14,7 +14,7 @@ class supplier extends AUTH_Controller {
 		$data['category_hw'] 	= $this->category_model->select_by_usage('hardware');
 
 		$data['page'] 		= "supplier";
-		$data['judul'] 		= "Data Supplier";
+		$data['judul'] 		= "Supplier";
 		$data['deskripsi'] 	= "Manage Data Supplier";
 
 		$data['modal_tambah_supplier'] = show_my_modal('modals/modal_tambah_supplier', 'tambah-supplier', $data);
