@@ -803,4 +803,14 @@
 	    $(this).removeClass("active");
 	  }
 	);
+
+	$("a.sidebar-toggle.menu_setting").click(function(){
+		$("ul.sidebar-menu ul.nav.child_menu.menu_hw").hide(500);
+        $("ul.sidebar-menu ul.nav.child_menu.menu_setting").toggle(500);
+    });
+
+    $("a.sidebar-toggle.menu_hw").click(function(){
+    	$("ul.sidebar-menu ul.nav.child_menu.menu_setting").hide(500);
+        $("ul.sidebar-menu ul.nav.child_menu.menu_hw").toggle(500);
+    });
 </script>

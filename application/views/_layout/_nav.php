@@ -43,7 +43,7 @@
 
       <li class="dropdown user user-menu menu-main-parent <?php if($page == 'category' || $page == 'users' || $page == 'profile') { echo 'active-page'; } ?>">
         <a href="#">
-          <span class="hidden-xs"><i class="fa fa-power-off"></i></span>
+          <span class="hidden-xs"><i class="fa fa-gear"></i></span>
         </a>
         <ul class="dropdown-menu menu-main-child">
             <li>

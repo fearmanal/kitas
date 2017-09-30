@@ -21,7 +21,7 @@
       <?php //echo @$_fab; ?>
 
       <!-- sidebar -->
-      <?php //echo @$_sidebar; ?>
+      <?php echo @$_sidebar; ?>
       
       <!-- content -->
       <?php echo @$_content; ?> <!-- headerContent --><!-- mainContent -->
