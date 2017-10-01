@@ -8,14 +8,14 @@
       <td><?php echo $supplier->fax; ?></td>
       <td><?php echo $supplier->city; ?></td>
       <td><?php echo $supplier->country; ?></td>
-      <td class="text-center">
-        <button class="btn btn-info detail-dataSuppHw" data-id="<?php echo $supplier->id_supplier; ?>"><i class="fa fa-laptop"></i></button>
-        <button class="btn btn-info detail-dataSuppSw" data-id="<?php echo $supplier->id_supplier; ?>"><i class="fa fa-windows"></i></button>
+      <td class="text-center" style="letter-spacing: 2px;">
+        <a href="#" class="detail-dataSuppHw" data-id="<?php echo $supplier->id_supplier; ?>"><i class="fa fa-laptop"></i></a>
+        <a href="#" class="detail-dataSuppSw" data-id="<?php echo $supplier->id_supplier; ?>"><i class="fa fa-windows"></i></a>
       <?php if($userdata->role == 'administrator' || $userdata->role == 'management') { ?>
-        <button class="btn btn-primary update-dataSupplier" data-id="<?php echo $supplier->id_supplier; ?>"><i class="fa fa-pencil"></i></button>
-        <button class="btn btn-danger konfirmasiHapus-supplier" data-id="<?php echo $supplier->id_supplier; ?>" data-toggle="modal" data-target="#konfirmasiHapus"><i class="fa fa-trash"></i></button>
+        <a href="#" class="update-dataSupplier" data-id="<?php echo $supplier->id_supplier; ?>"><i class="fa fa-pencil"></i></a>
+        <a href="#" class="konfirmasiHapus-supplier" data-id="<?php echo $supplier->id_supplier; ?>" data-toggle="modal" data-target="#konfirmasiHapus"><i class="fa fa-trash"></i></a>
       <?php } else if($userdata->role == 'guest') { ?>
-        <button class="btn btn-primary update-dataSupplier" data-id="<?php echo $supplier->id_supplier; ?>"><i class="fa fa-external-link"></i></button>        
+        <a href="#" class="update-dataSupplier" data-id="<?php echo $supplier->id_supplier; ?>"><i class="fa fa-external-link"></i></a>        
       <?php } ?>
       </td>
     </tr>

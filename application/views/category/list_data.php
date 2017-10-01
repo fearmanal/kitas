@@ -6,10 +6,10 @@
       <td><?php echo $category->label; ?></td>
       <td><?php echo $category->options; ?></td>
       <td><?php echo $category->status; ?></td>
-      <td class="text-center">
+      <td class="text-center" style="letter-spacing: 2px;">
       <?php if($userdata->role == 'administrator' || $userdata->role == 'management') { ?>
-        <button class="btn btn-primary update-dataCategory" data-id="<?php echo $category->id_category; ?>"><i class="fa fa-pencil"></i></button>
-        <button class="btn btn-danger konfirmasiHapus-category" data-id="<?php echo $category->id_category; ?>" data-toggle="modal" data-target="#konfirmasiHapus"><i class="fa fa-trash"></i></button>
+        <a href="#" class="update-dataCategory" data-id="<?php echo $category->id_category; ?>"><i class="fa fa-pencil"></i></a>
+        <a href="#" class="konfirmasiHapus-category" data-id="<?php echo $category->id_category; ?>" data-toggle="modal" data-target="#konfirmasiHapus"><i class="fa fa-trash"></i></a>
       <?php } ?>
       </td>
     </tr>

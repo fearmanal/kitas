@@ -9,7 +9,7 @@
 	  		if ($i == 0) {
 	  			if($this->session->flashdata('segment')[$i] !== 'home') {  			
 	  		?>
-	  			<li><i class="fa fa-dashboard"></i> Home</li>
+	  			<li>Home</li>
 				<li> <?php echo $this->session->flashdata('segment')[$i]; ?></li>
 	  		<?php
 	  			}

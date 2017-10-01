@@ -1,4 +1,4 @@
-  <div class="floater">
+<div class="floater">
     <ul class="floater__list">
       <li class="floater__list-item">      
           <i class="fa fa-laptop"></i>

@@ -41,7 +41,6 @@
 			<label for="condition">Condition</label>
 			<select class="form-control" name="condition" aria-describedby="sizing-addon2">
 			  <option value="Good">Good</option>
-			  <option value="In Service">In Service</option>
 			  <option value="Bad">Bad</option>
 			</select>
 		  </div>

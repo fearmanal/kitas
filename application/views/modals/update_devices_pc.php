@@ -89,7 +89,6 @@
         <label for="condition">Condition</label>
         <select class="form-control" name="condition" aria-describedby="sizing-addon2">
           <option value="Good" <?php if ($dataDevices->condition == 'Good') echo "selected"; ?>>Good</option>
-          <option value="In Service" <?php if ($dataDevices->condition == 'In Service') echo "selected"; ?>>In Service</option>
           <option value="Bad" <?php if ($dataDevices->condition == 'Bad') echo "selected"; ?>>Bad</option>
         </select>
       </div>
