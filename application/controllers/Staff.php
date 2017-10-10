@@ -36,6 +36,7 @@ class staff extends AUTH_Controller {
 				'position' => $this->input->post('position'),
 				'email' => $this->input->post('email'),
 				'phone' => $this->input->post('phone'),
+				'location' => $this->input->post('location'),
 				'status' => $this->input->post('status'),
 			);
 
@@ -74,6 +75,7 @@ class staff extends AUTH_Controller {
 				'position' => $this->input->post('position'),
 				'email' => $this->input->post('email'),
 				'phone' => $this->input->post('phone'),
+				'location' => $this->input->post('location'),
 				'status' => $this->input->post('status'),
 			);
 
@@ -136,7 +138,8 @@ class staff extends AUTH_Controller {
 		$objPHPExcel->getActiveSheet()->SetCellValue('B1', "Email");
 		$objPHPExcel->getActiveSheet()->SetCellValue('C1', "Phone");
 		$objPHPExcel->getActiveSheet()->SetCellValue('D1', "Position");
-		$objPHPExcel->getActiveSheet()->SetCellValue('E1', "Status");
+		$objPHPExcel->getActiveSheet()->SetCellValue('E1', "Location");
+		$objPHPExcel->getActiveSheet()->SetCellValue('F1', "Status");
 
 		$rowCount = 2;
 		foreach($data as $value){
@@ -144,7 +147,8 @@ class staff extends AUTH_Controller {
 		    $objPHPExcel->getActiveSheet()->SetCellValue('B'.$rowCount, $value->email);
 		    $objPHPExcel->getActiveSheet()->SetCellValue('C'.$rowCount, $value->phone);
 		    $objPHPExcel->getActiveSheet()->SetCellValue('D'.$rowCount, $value->position);
-		    $objPHPExcel->getActiveSheet()->SetCellValue('E'.$rowCount, $value->status);
+		    $objPHPExcel->getActiveSheet()->SetCellValue('E'.$rowCount, $value->location);
+		    $objPHPExcel->getActiveSheet()->SetCellValue('F'.$rowCount, $value->status);
 		    $rowCount++; 
 		} 
 

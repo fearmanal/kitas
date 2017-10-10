@@ -57,8 +57,8 @@
 		<div class="form-group">
 		  <label for="location">Location</label>
 		  <select class="form-control" name="location" aria-describedby="sizing-addon2">
-			<option value="Jakarta Office">Jakarta Office</option>
-			<option value="Bandung Office">Bandung Office</option>
+			<option value="Kemana Jakarta">Kemana Jakarta</option>
+			<option value="Kemana Bandung">Kemana Bandung</option>
 		  </select>
 		</div>		   
 	  </div>

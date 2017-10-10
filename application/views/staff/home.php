@@ -23,6 +23,7 @@
           <th>Name</th>
           <th>Email</th>
           <th>Position</th>
+          <th>Location</th>
           <th>Status</th>
           <th style="text-align: center;">&nbsp;&nbsp;&nbsp;</th>
         </tr>

@@ -105,8 +105,8 @@
     <div class="form-group">
       <label for="location">Location</label>
       <select class="form-control" name="location" aria-describedby="sizing-addon2">
-        <option value="Jakarta Office" <?php if ($dataDevices->location == 'Jakarta Office') echo "selected"; ?>>Jakarta Office</option>
-        <option value="Bandung Office" <?php if ($dataDevices->location == 'Bandung Office') echo "selected"; ?>>Bandung Office</option>
+        <option value="Kemana Jakarta" <?php if ($dataDevices->location == 'Kemana Jakarta') echo "selected"; ?>>Kemana Jakarta</option>
+        <option value="Kemana Bandung" <?php if ($dataDevices->location == 'Kemana Bandung') echo "selected"; ?>>Kemana Bandung</option>
       </select>
     </div>
        
@@ -278,8 +278,8 @@
     <div class="form-group">
       <label for="location">Location</label>
       <select disabled style="cursor: default;" class="form-control" name="location" aria-describedby="sizing-addon2">
-        <option value="Jakarta Office" <?php if ($dataDevices->location == 'Jakarta Office') echo "selected"; ?>>Jakarta Office</option>
-        <option value="Bandung Office" <?php if ($dataDevices->location == 'Bandung Office') echo "selected"; ?>>Bandung Office</option>
+        <option value="Kemana Jakarta" <?php if ($dataDevices->location == 'Kemana Jakarta') echo "selected"; ?>>Kemana Jakarta</option>
+        <option value="Kemana Bandung" <?php if ($dataDevices->location == 'Kemana Bandung') echo "selected"; ?>>Kemana Bandung</option>
       </select>
     </div>
        

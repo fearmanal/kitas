@@ -20,6 +20,7 @@
     <table id="list-data" class="table table-bordered table-striped">
       <thead>
         <tr>
+          <th>Dev.</th>
           <th>Label</th>          
           <th>Brand</th>
           <th>Series</th>

@@ -31,6 +31,7 @@ class category_model extends CI_Model {
 		$this->db->select('*');
 		$this->db->from($table);
 		$this->db->where($where);
+		$this->db->order_by("label", "asc");
 
 		$data = $this->db->get();
 		return $data->result();

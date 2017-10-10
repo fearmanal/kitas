@@ -1,7 +1,7 @@
 <footer class="main-footer">
 	<!-- To the right 
 	<div class="pull-right hidden-xs">
-		KITAS
+		KITAM
 	</div>
 	-->
 	<!-- Default to the left -->

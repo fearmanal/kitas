@@ -3,6 +3,7 @@
     
     ?>
     <tr>
+      <td><?php echo $devices->name; ?></td>
       <td><?php echo $devices->label; ?></td>
       <td><?php echo $devices->manufacturer; ?></td>
       <td><?php echo $devices->series; ?></td>

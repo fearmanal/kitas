@@ -5,6 +5,7 @@
       <td><?php echo $staff->name; ?></td>
       <td><?php echo $staff->email; ?></td>
       <td><?php echo $staff->position; ?></td>
+      <td><?php echo $staff->location; ?></td>
       <td><?php echo $staff->status; ?></td>
       <td class="text-center" style="letter-spacing: 2px;">
         <a href="#" class="detail-dataHw" data-id="<?php echo $staff->id_staff; ?>"><i class="fa fa-laptop"></i></a>

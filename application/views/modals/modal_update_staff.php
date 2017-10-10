@@ -24,6 +24,10 @@
         <input type="text" class="form-control" placeholder="Position" name="position" aria-describedby="sizing-addon2" value="<?php echo $dataStaff->position; ?>">
       </div>
       <div class="form-group">
+        <label for="location">Location</label>
+        <input type="text" class="form-control" placeholder="Location" name="location" aria-describedby="sizing-addon2" value="<?php echo $dataStaff->location; ?>">
+      </div>
+      <div class="form-group">
         <label for="status">Status</label>
         <select class="form-control" name="status" aria-describedby="sizing-addon2">
           <option value="Active" <?php if ($dataStaff->status == 'Active') echo "selected"; ?>>Active</option>
